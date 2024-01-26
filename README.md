@@ -4,16 +4,17 @@ A minimal red colorscheme for Vim.
 
 ## Screenshots
 
-*Fira Code* font on dark and light backgrounds:
+*Berkeley Mono* font on dark background:
 
 ![](screenshots/dark.png)
 
 ## Installation
 
 Copy the color scheme file to your `~/.vim/colors` directory, or use a plugin
-manager like [Plug][] or [Vundle][] and add `"Mordinel/vim-sunsurfer"`
+manager like [packer][] [Plug][] or [Vundle][] and add `"Mordinel/vim-sunsurfer"`
 as a plugin.
 
+[packer]: https://github.com/wbthomason/packer.nvim
 [vundle]: https://github.com/gmarik/Vundle.vim
 [plug]: https://github.com/junegunn/vim-plug
 
