@@ -1,18 +1,17 @@
-# Sunbather
+# Sunsurfer
 
-A minimal pink colorscheme for Vim.
+A minimal red colorscheme for Vim.
 
 ## Screenshots
 
 *Fira Code* font on dark and light backgrounds:
 
 ![](screenshots/dark.png)
-![](screenshots/light.png)
 
 ## Installation
 
 Copy the color scheme file to your `~/.vim/colors` directory, or use a plugin
-manager like [Plug][] or [Vundle][] and add `"nikolvs/vim-sunbather"`
+manager like [Plug][] or [Vundle][] and add `"Mordinel/vim-sunsurfer"`
 as a plugin.
 
 [vundle]: https://github.com/gmarik/Vundle.vim
@@ -21,16 +20,17 @@ as a plugin.
 ## Usage
 
 ```
-:colorscheme sunbather
+:colorscheme sunsurfer
 ```
 
-Supports both `background=light` and `background=dark`.
+Supports `background=dark`.
 
 ## Credits
 
-Forked from [paramount][].
-Based on the [pencil][] and [off][] colorschemes.
+Forked from [sunbather][].
+Based on the [pencil][], [off][] and [paramount][]colorschemes.
 
+[sunbather]: https://github.com/nikolvs/vim-sunbather
 [paramount]: https://github.com/owickstrom/vim-colors-paramount
 [pencil]: https://github.com/reedes/vim-colors-pencil
 [off]: https://github.com/reedes/vim-colors-off
