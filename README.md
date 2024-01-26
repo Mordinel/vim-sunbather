@@ -29,7 +29,7 @@ Supports `background=dark`.
 ## Credits
 
 Forked from [sunbather][].
-Based on the [pencil][], [off][] and [paramount][]colorschemes.
+Based on the [pencil][], [off][] and [paramount][] colorschemes.
 
 [sunbather]: https://github.com/nikolvs/vim-sunbather
 [paramount]: https://github.com/owickstrom/vim-colors-paramount
