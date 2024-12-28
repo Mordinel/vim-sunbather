@@ -1,5 +1,5 @@
 " Name:       sunsurfer.vim
-" Version:    0.1.0
+" Version:    0.1.1
 " Maintainer: github.com/Mordinel
 " License:    The MIT License (MIT)
 "
@@ -23,7 +23,7 @@ let s:medium_gray     = { "gui": "#767676", "cterm": "243" }
 let s:white           = { "gui": "#F1F1F1", "cterm": "15"  }
 let s:actual_white    = { "gui": "#FFFFFF", "cterm": "231" }
 let s:subtle_black    = { "gui": "#121212", "cterm": "233" }
-let s:light_black     = { "gui": "#262626", "cterm": "235" }
+let s:light_black     = { "gui": "#333333", "cterm": "235" }
 let s:lighter_black   = { "gui": "#4E4E4E", "cterm": "239" }
 let s:light_gray      = { "gui": "#A8A8A8", "cterm": "248" }
 let s:lighter_gray    = { "gui": "#C6C6C6", "cterm": "251" }
@@ -46,17 +46,32 @@ let s:dark_yellow     = { "gui": "#E9B48B", "cterm": "3"   }
 
 let s:background = &background
 
-let s:bg              = s:black
-let s:bg_subtle       = s:lighter_black
-let s:bg_very_subtle  = s:subtle_black
-let s:norm            = s:white
-let s:norm_subtle     = s:medium_gray
-let s:red             = s:light_red
-let s:cyan            = s:dark_cyan
-let s:green           = s:dark_green
-let s:red             = s:dark_red
-let s:visual          = s:light_red
-let s:yellow          = s:light_yellow
+if &background == "dark"
+    let s:bg              = s:black
+    let s:bg_subtle       = s:lighter_black
+    let s:bg_very_subtle  = s:subtle_black
+    let s:norm            = s:white
+    let s:norm_subtle     = s:medium_gray
+    let s:red             = s:light_red
+    let s:cyan            = s:dark_cyan
+    let s:green           = s:dark_green
+    let s:red             = s:dark_red
+    let s:visual          = s:light_red
+    let s:yellow          = s:light_yellow
+else
+    let s:bg              = s:actual_white
+    let s:bg_subtle       = s:light_gray
+    let s:bg_very_subtle  = s:lightest_gray
+    let s:norm            = s:light_black
+    let s:norm_subtle     = s:lighter_black
+    let s:red             = s:light_red
+    let s:cyan            = s:dark_cyan
+    let s:green           = s:dark_green
+    let s:red             = s:dark_red
+    let s:visual          = s:light_red
+    let s:yellow          = s:light_yellow
+endif
+
 
 " https://github.com/noahfrederick/vim-hemisu/
 function! s:h(group, style)
