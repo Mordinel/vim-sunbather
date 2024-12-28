@@ -8,6 +8,11 @@ A minimal red colorscheme for Vim.
 
 ![](screenshots/dark.png)
 
+
+*Berkeley Mono* font on light background:
+
+![](screenshots/light.png)
+
 ## Installation
 
 Copy the color scheme file to your `~/.vim/colors` directory, or use a plugin
